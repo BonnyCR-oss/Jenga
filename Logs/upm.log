@@ -1,0 +1,55 @@
+[2026-08-18T18:14:49.727Z][INFO] Command-line: D:\\UnityHub\\Editor\\6000.5.6f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe server -s 2948 --ipc-path Unity-Upm-2948 -l 2 --log-file D:\\UnityGames\\Practica2_AR_Sanchez_Crespo_Valeriano/Logs/upm.log
+[2026-08-18T18:14:49.791Z][INFO] IPC server started (IPC path=Unity-Upm-2948).
+[2026-08-18T18:14:49.793Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-2948.
+[2026-08-18T18:14:57.584Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T18:14:57.747Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-18T18:14:57.766Z][INFO] config:project:get-registries --> 200 (19 ms)
+[2026-08-18T18:14:57.772Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T18:14:58.623Z][INFO] project:list-packages --> 200 (1039 ms)
+[2026-08-18T18:14:58.777Z][INFO] project:list-packages --> 200 (1005 ms)
+[2026-08-18T18:17:17.048Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T18:17:17.095Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T18:17:17.580Z][INFO] project:list-packages --> 200 (531 ms)
+[2026-08-18T18:17:17.639Z][INFO] project:list-packages --> 200 (544 ms)
+[2026-08-18T18:17:22.369Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T18:17:22.707Z][INFO] project:list-packages --> 200 (338 ms)
+[2026-08-18T18:17:22.813Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-18T18:17:22.821Z][INFO] config:project:get-registries --> 200 (8 ms)
+[2026-08-18T18:17:22.949Z][INFO] packages:get-all-packageinfo <-- Request received
+params: {}
+[2026-08-18T18:17:22.970Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T18:17:24.350Z][INFO] packages:get-all-packageinfo --> 200 (1401 ms)
+[2026-08-18T18:17:24.540Z][INFO] project:list-packages --> 200 (1570 ms)
+[2026-08-18T18:17:30.395Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T18:17:30.730Z][INFO] project:list-packages --> 200 (335 ms)
+[2026-08-18T18:17:38.037Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T18:17:40.835Z][INFO] project:list-packages --> 200 (2798 ms)
+[2026-08-18T19:02:46.448Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T19:02:46.852Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T19:02:50.597Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T19:02:50.913Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T19:02:56.537Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T19:02:56.795Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-18T19:02:58.827Z][ERROR] Error: Cannot connect to 'packages.unity.com' (error code: ENOTFOUND). Check your internet connection and verify that your environment firewall policies allow connection to this host name. If your system is behind a proxy, verify your proxy environment variables (HTTP_PROXY and HTTPS_PROXY) are properly set.
+[2026-08-18T19:03:35.933Z][INFO] project:list-packages --> 200 (49081 ms)
+[2026-08-18T19:03:35.939Z][INFO] project:list-packages --> 200 (39143 ms)
+[2026-08-18T19:03:35.948Z][INFO] project:list-packages --> 200 (49500 ms)
+[2026-08-18T19:03:35.957Z][INFO] project:list-packages --> 200 (39420 ms)
+[2026-08-18T19:03:35.964Z][INFO] project:list-packages --> 200 (45367 ms)
+[2026-08-18T19:03:35.975Z][INFO] project:list-packages --> 200 (45061 ms)
