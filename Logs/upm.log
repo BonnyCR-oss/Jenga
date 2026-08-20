@@ -1,55 +1,235 @@
-[2026-08-18T18:14:49.727Z][INFO] Command-line: D:\\UnityHub\\Editor\\6000.5.6f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe server -s 2948 --ipc-path Unity-Upm-2948 -l 2 --log-file D:\\UnityGames\\Practica2_AR_Sanchez_Crespo_Valeriano/Logs/upm.log
-[2026-08-18T18:14:49.791Z][INFO] IPC server started (IPC path=Unity-Upm-2948).
-[2026-08-18T18:14:49.793Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-2948.
-[2026-08-18T18:14:57.584Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:44:09.210Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.6f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 5700 --ipc-path Unity-Upm-5700 -l 2 --log-file D:\\discoD\\VR\\Jenga/Logs/upm.log
+[2026-08-19T21:44:09.283Z][INFO] IPC server started (IPC path=Unity-Upm-5700).
+[2026-08-19T21:44:09.284Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-5700.
+[2026-08-19T21:46:41.773Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T18:14:57.747Z][INFO] config:project:get-registries <-- Request received
+[2026-08-19T21:46:42.009Z][INFO] config:project:get-registries <-- Request received
 params: {}
-[2026-08-18T18:14:57.766Z][INFO] config:project:get-registries --> 200 (19 ms)
-[2026-08-18T18:14:57.772Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:46:42.024Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T18:14:58.623Z][INFO] project:list-packages --> 200 (1039 ms)
-[2026-08-18T18:14:58.777Z][INFO] project:list-packages --> 200 (1005 ms)
-[2026-08-18T18:17:17.048Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:46:42.189Z][INFO] project:resolve-packages <-- Request received
 params: {}
-[2026-08-18T18:17:17.095Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:46:43.188Z][INFO] config:project:get-registries --> 200 (1178 ms)
+[2026-08-19T21:46:44.333Z][INFO] project:list-packages --> 200 (2309 ms)
+[2026-08-19T21:46:44.358Z][INFO] project:list-packages --> 200 (2585 ms)
+[2026-08-19T21:47:38.148Z][WARN] Requested version [2.5.1] for package [com.unity.xr.core-utils] overridden by minimum version [2.6.0].
+[2026-08-19T21:47:38.150Z][WARN] Requested version [4.4.0] for package [com.unity.xr.management] overridden by minimum version [4.5.4].
+[2026-08-19T21:47:38.150Z][WARN] Requested version [1.0.0] for package [com.unity.editorcoroutines] overridden by minimum version [1.1.0].
+[2026-08-19T21:47:38.150Z][WARN] Requested version [2.1.11] for package [com.unity.xr.legacyinputhelpers] overridden by minimum version [3.0.1].
+[2026-08-19T21:47:38.150Z][WARN] Requested version [4.9.3] for package [com.unity.searcher] overridden by minimum version [4.9.4].
+[2026-08-19T21:47:38.150Z][WARN] Requested version [1.8.14] for package [com.unity.burst] overridden by minimum version [1.8.29].
+[2026-08-19T21:47:38.150Z][WARN] Requested version [3.2.0] for package [com.unity.test-framework.performance] overridden by minimum version [3.5.0].
+[2026-08-19T21:47:38.155Z][INFO] project:resolve-packages --> 200 (55967 ms)
+[2026-08-19T21:50:12.872Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T18:17:17.580Z][INFO] project:list-packages --> 200 (531 ms)
-[2026-08-18T18:17:17.639Z][INFO] project:list-packages --> 200 (544 ms)
-[2026-08-18T18:17:22.369Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:50:12.926Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T18:17:22.707Z][INFO] project:list-packages --> 200 (338 ms)
-[2026-08-18T18:17:22.813Z][INFO] config:project:get-registries <-- Request received
+[2026-08-19T21:50:14.102Z][INFO] project:list-packages --> 200 (1229 ms)
+[2026-08-19T21:50:14.104Z][INFO] project:list-packages --> 200 (1179 ms)
+[2026-08-19T21:50:14.620Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T18:17:22.821Z][INFO] config:project:get-registries --> 200 (8 ms)
-[2026-08-18T18:17:22.949Z][INFO] packages:get-all-packageinfo <-- Request received
+[2026-08-19T21:50:14.882Z][INFO] config:project:get-registries <-- Request received
 params: {}
-[2026-08-18T18:17:22.970Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:50:14.907Z][INFO] config:project:get-registries --> 200 (26 ms)
+[2026-08-19T21:50:15.072Z][INFO] packages:get-all-packageinfo <-- Request received
 params: {}
-[2026-08-18T18:17:24.350Z][INFO] packages:get-all-packageinfo --> 200 (1401 ms)
-[2026-08-18T18:17:24.540Z][INFO] project:list-packages --> 200 (1570 ms)
-[2026-08-18T18:17:30.395Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:50:15.090Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T18:17:30.730Z][INFO] project:list-packages --> 200 (335 ms)
-[2026-08-18T18:17:38.037Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:50:15.417Z][INFO] project:list-packages --> 200 (797 ms)
+[2026-08-19T21:50:18.871Z][INFO] packages:get-all-packageinfo --> 200 (3799 ms)
+[2026-08-19T21:50:19.838Z][INFO] project:list-packages --> 200 (4747 ms)
+[2026-08-19T21:51:32.850Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T18:17:40.835Z][INFO] project:list-packages --> 200 (2798 ms)
-[2026-08-18T19:02:46.448Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:51:33.222Z][INFO] project:list-packages --> 200 (373 ms)
+[2026-08-19T21:51:38.040Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T19:02:46.852Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:51:38.344Z][INFO] project:list-packages --> 200 (304 ms)
+[2026-08-19T21:51:42.874Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T19:02:50.597Z][INFO] project:list-packages <-- Request received
+[2026-08-19T21:51:47.772Z][INFO] project:list-packages --> 200 (4898 ms)
+[2026-08-19T22:29:32.387Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T19:02:50.913Z][INFO] project:list-packages <-- Request received
+[2026-08-19T22:29:32.913Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T19:02:56.537Z][INFO] project:list-packages <-- Request received
+[2026-08-19T22:29:33.181Z][INFO] config:project:get-registries <-- Request received
 params: {}
-[2026-08-18T19:02:56.795Z][INFO] project:list-packages <-- Request received
+[2026-08-19T22:29:33.200Z][INFO] config:project:get-registries --> 200 (19 ms)
+[2026-08-19T22:29:33.592Z][INFO] project:list-packages --> 200 (1207 ms)
+[2026-08-19T22:29:33.594Z][INFO] project:list-packages --> 200 (681 ms)
+[2026-08-19T22:29:34.210Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-18T19:02:58.827Z][ERROR] Error: Cannot connect to 'packages.unity.com' (error code: ENOTFOUND). Check your internet connection and verify that your environment firewall policies allow connection to this host name. If your system is behind a proxy, verify your proxy environment variables (HTTP_PROXY and HTTPS_PROXY) are properly set.
-[2026-08-18T19:03:35.933Z][INFO] project:list-packages --> 200 (49081 ms)
-[2026-08-18T19:03:35.939Z][INFO] project:list-packages --> 200 (39143 ms)
-[2026-08-18T19:03:35.948Z][INFO] project:list-packages --> 200 (49500 ms)
-[2026-08-18T19:03:35.957Z][INFO] project:list-packages --> 200 (39420 ms)
-[2026-08-18T19:03:35.964Z][INFO] project:list-packages --> 200 (45367 ms)
-[2026-08-18T19:03:35.975Z][INFO] project:list-packages --> 200 (45061 ms)
+[2026-08-19T22:29:34.481Z][INFO] project:list-packages --> 200 (272 ms)
+[2026-08-19T22:36:31.950Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-19T22:36:32.207Z][INFO] project:list-packages --> 200 (257 ms)
+[2026-08-19T22:36:32.677Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-19T22:36:33.123Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-19T22:36:33.266Z][INFO] config:project:get-registries --> 200 (143 ms)
+[2026-08-19T22:36:33.624Z][INFO] project:list-packages --> 200 (947 ms)
+[2026-08-19T22:36:35.943Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-19T22:36:37.277Z][INFO] project:list-packages --> 200 (1334 ms)
+[2026-08-19T23:45:18.697Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-19T23:45:20.839Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-19T23:45:25.269Z][INFO] project:list-packages --> 200 (4430 ms)
+[2026-08-19T23:45:25.270Z][INFO] project:list-packages --> 200 (6573 ms)
+[2026-08-20T01:39:28.373Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T01:39:29.864Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T01:39:34.474Z][INFO] project:list-packages --> 200 (6109 ms)
+[2026-08-20T01:39:34.478Z][INFO] project:list-packages --> 200 (4614 ms)
+[2026-08-20T01:40:51.325Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T01:40:51.632Z][INFO] project:list-packages --> 200 (307 ms)
+[2026-08-20T01:40:51.788Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T01:40:52.050Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T01:40:52.104Z][INFO] project:list-packages --> 200 (316 ms)
+[2026-08-20T01:40:52.105Z][INFO] config:project:get-registries --> 200 (55 ms)
+[2026-08-20T01:40:53.139Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T01:40:53.399Z][INFO] project:list-packages --> 200 (261 ms)
+[2026-08-20T02:04:50.502Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:04:51.246Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:04:51.305Z][INFO] project:list-packages --> 200 (803 ms)
+[2026-08-20T02:04:51.504Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T02:04:51.531Z][INFO] config:project:get-registries --> 200 (26 ms)
+[2026-08-20T02:04:51.790Z][INFO] project:list-packages --> 200 (544 ms)
+[2026-08-20T02:04:52.615Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:04:53.223Z][INFO] project:list-packages --> 200 (608 ms)
+[2026-08-20T02:18:21.912Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:18:22.640Z][INFO] project:list-packages --> 200 (729 ms)
+[2026-08-20T02:18:23.065Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:18:23.763Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T02:18:23.806Z][INFO] project:list-packages --> 200 (741 ms)
+[2026-08-20T02:18:23.818Z][INFO] config:project:get-registries --> 200 (55 ms)
+[2026-08-20T02:18:25.848Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:18:26.522Z][INFO] project:list-packages --> 200 (675 ms)
+[2026-08-20T02:19:09.020Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:19:09.657Z][INFO] project:list-packages --> 200 (637 ms)
+[2026-08-20T02:19:10.238Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:19:10.950Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T02:19:10.989Z][INFO] project:list-packages --> 200 (751 ms)
+[2026-08-20T02:19:10.993Z][INFO] config:project:get-registries --> 200 (44 ms)
+[2026-08-20T02:19:12.971Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:19:13.606Z][INFO] project:list-packages --> 200 (634 ms)
+[2026-08-20T02:19:47.563Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:19:48.360Z][INFO] project:list-packages --> 200 (797 ms)
+[2026-08-20T02:19:48.881Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:19:49.510Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T02:19:49.634Z][INFO] project:list-packages --> 200 (753 ms)
+[2026-08-20T02:19:49.636Z][INFO] config:project:get-registries --> 200 (127 ms)
+[2026-08-20T02:19:51.643Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T02:19:52.300Z][INFO] project:list-packages --> 200 (658 ms)
+[2026-08-20T03:05:23.945Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:05:24.950Z][INFO] project:list-packages --> 200 (1017 ms)
+[2026-08-20T03:05:25.120Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:05:25.787Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T03:05:25.805Z][INFO] project:list-packages --> 200 (685 ms)
+[2026-08-20T03:05:25.809Z][INFO] config:project:get-registries --> 200 (22 ms)
+[2026-08-20T03:05:29.283Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:05:29.950Z][INFO] project:list-packages --> 200 (667 ms)
+[2026-08-20T03:34:30.826Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:34:31.660Z][INFO] project:list-packages --> 200 (834 ms)
+[2026-08-20T03:34:32.109Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:34:32.789Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T03:34:32.894Z][INFO] project:list-packages --> 200 (785 ms)
+[2026-08-20T03:34:32.911Z][INFO] config:project:get-registries --> 200 (122 ms)
+[2026-08-20T03:34:35.425Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:34:36.151Z][INFO] project:list-packages --> 200 (725 ms)
+[2026-08-20T03:38:56.511Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:38:57.187Z][INFO] project:list-packages --> 200 (676 ms)
+[2026-08-20T03:38:57.714Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:38:58.358Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T03:38:58.464Z][INFO] project:list-packages --> 200 (750 ms)
+[2026-08-20T03:38:58.469Z][INFO] config:project:get-registries --> 200 (112 ms)
+[2026-08-20T03:39:00.891Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:39:01.552Z][INFO] project:list-packages --> 200 (661 ms)
+[2026-08-20T03:39:17.886Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:39:19.363Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T03:39:24.789Z][INFO] project:list-packages --> 200 (5425 ms)
+[2026-08-20T03:39:24.793Z][INFO] project:list-packages --> 200 (6907 ms)
+[2026-08-20T04:09:35.275Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:09:35.666Z][INFO] project:list-packages --> 200 (391 ms)
+[2026-08-20T04:09:35.867Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:09:36.185Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T04:09:36.194Z][INFO] project:list-packages --> 200 (327 ms)
+[2026-08-20T04:09:36.196Z][INFO] config:project:get-registries --> 200 (11 ms)
+[2026-08-20T04:09:37.313Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:09:37.649Z][INFO] project:list-packages --> 200 (336 ms)
+[2026-08-20T04:09:55.712Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:09:56.004Z][INFO] project:list-packages --> 200 (292 ms)
+[2026-08-20T04:09:56.178Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:09:56.504Z][INFO] project:list-packages --> 200 (326 ms)
+[2026-08-20T04:09:56.512Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T04:09:56.518Z][INFO] config:project:get-registries --> 200 (6 ms)
+[2026-08-20T04:09:57.687Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:09:57.985Z][INFO] project:list-packages --> 200 (298 ms)
+[2026-08-20T04:10:31.998Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:10:32.298Z][INFO] project:list-packages --> 200 (300 ms)
+[2026-08-20T04:10:32.516Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:10:32.828Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T04:10:32.841Z][INFO] project:list-packages --> 200 (325 ms)
+[2026-08-20T04:10:32.843Z][INFO] config:project:get-registries --> 200 (15 ms)
+[2026-08-20T04:10:33.805Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:10:34.169Z][INFO] project:list-packages --> 200 (364 ms)
+[2026-08-20T04:11:09.805Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:11:10.102Z][INFO] project:list-packages --> 200 (297 ms)
+[2026-08-20T04:11:10.285Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:11:10.603Z][INFO] project:list-packages --> 200 (318 ms)
+[2026-08-20T04:11:10.616Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-20T04:11:10.622Z][INFO] config:project:get-registries --> 200 (6 ms)
+[2026-08-20T04:11:11.562Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-20T04:11:11.842Z][INFO] project:list-packages --> 200 (280 ms)

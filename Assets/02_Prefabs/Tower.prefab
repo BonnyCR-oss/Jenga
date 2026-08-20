@@ -165,7 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74186ed046e80a3439b33752a8db1856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerBuilder
-  blockHeight: 0.15
+  blockHeight: 0.044
+  blockWidth: 0.01
 --- !u!114 &1570491701266097148
 MonoBehaviour:
   m_ObjectHideFlags: 0

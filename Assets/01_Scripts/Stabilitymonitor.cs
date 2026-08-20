@@ -31,7 +31,11 @@ public class StabilityMonitor : MonoBehaviour
         foreach (var kvp in _initialState)
         {
             Transform t = kvp.Key;
-            if (t == null) continue; // bloque ya reubicado, se re-captura al colocarse arriba
+            if (t == null) continue;
+
+            JengaBlock block = t.GetComponent<JengaBlock>();
+            if (block != null && block.IsBeingRemoved)
+                continue; // se está moviendo a propósito, no cuenta como caída
 
             float tilt = Quaternion.Angle(t.localRotation, kvp.Value.rot);
             float drift = Vector3.Distance(
@@ -45,11 +49,18 @@ public class StabilityMonitor : MonoBehaviour
             }
         }
     }
-
     void TriggerFall()
     {
         _fallTriggered = true;
         GameManager.Instance.OnTowerFell();
+    }
+
+    // Permite que TowerBuilder dispare la caída cuando se vacía
+    // por completo un nivel que tiene bloques encima.
+    public void ForceFall()
+    {
+        if (_fallTriggered) return;
+        TriggerFall();
     }
 
     // Llamar cada vez que un bloque se reubica exitosamente arriba, para no falsear la detección

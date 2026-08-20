@@ -8,17 +8,24 @@ public class GameManager : MonoBehaviour
     [Header("Jugadores")]
     public int playerCount = 3;
 
-    [Header("Eventos UI (opcional, conectar en el inspector)")]
-    public UnityEvent<int> onTurnChanged;      // índice de jugador (0-based)
-    public UnityEvent<int> onPlayerLost;       // índice de jugador que hizo caer la torre
-    public UnityEvent onInvalidMove;           // feedback de intento inválido
+    [Header("Eventos UI")]
+    public UnityEvent<int> onTurnChanged;
+    public UnityEvent<int> onPlayerLost;
+    public UnityEvent onInvalidMove;
 
     public bool TowerHasFallen { get; private set; }
-    public int CurrentPlayer { get; private set; } // 0-based
+    public int CurrentPlayer { get; private set; }
+
+    // Bloque actualmente seleccionado
+    public JengaBlock SelectedBlock { get; private set; }
+
+    // Evita seleccionar otro bloque mientras se está realizando el movimiento
+    public bool MoveInProgress { get; private set; }
 
     private bool _trackingStable;
     private bool _towerPlaced;
     private bool _gameOver;
+
     private StabilityMonitor _stabilityMonitor;
 
     void Awake()
@@ -29,8 +36,15 @@ public class GameManager : MonoBehaviour
     public void OnTowerPlaced(GameObject towerRoot)
     {
         _towerPlaced = true;
+
         _stabilityMonitor = towerRoot.GetComponent<StabilityMonitor>();
-        CurrentPlayer = 0; // partida comienza con Jugador 1
+
+        CurrentPlayer = 0;
+        TowerHasFallen = false;
+        _gameOver = false;
+        MoveInProgress = false;
+        SelectedBlock = null;
+
         onTurnChanged?.Invoke(CurrentPlayer);
     }
 
@@ -39,35 +53,101 @@ public class GameManager : MonoBehaviour
         _trackingStable = stable;
     }
 
-    // La manipulación solo se habilita con torre colocada, tracking estable y partida en curso
     public bool CanInteract()
     {
-        return _towerPlaced && _trackingStable && !_gameOver && !TowerHasFallen;
+        return _towerPlaced &&
+               _trackingStable &&
+               !_gameOver &&
+               !TowerHasFallen &&
+               !MoveInProgress;
     }
 
-    public void OnInvalidMove()
+    // SELECCIÓN DE BLOQUES
+
+    public void SelectBlock(JengaBlock block)
     {
-        // Regla: un movimiento inválido no cambia el turno
-        onInvalidMove?.Invoke();
+        if (block == null)
+            return;
+
+        // Si ya había otro bloque seleccionado,
+        // cancelamos automáticamente su selección.
+        if (SelectedBlock != null && SelectedBlock != block)
+        {
+            SelectedBlock.CancelSelection();
+        }
+
+        SelectedBlock = block;
+    }
+
+    public void ClearSelectedBlock(JengaBlock block)
+    {
+        if (SelectedBlock == block)
+        {
+            SelectedBlock = null;
+        }
+    }
+    public void CancelCurrentSelection()
+    {
+        if (SelectedBlock != null)
+        {
+            SelectedBlock.CancelSelection();
+            SelectedBlock = null;
+        }
+    }
+
+    // MOVIMIENTO
+
+    public void BeginMove()
+    {
+        if (_gameOver || TowerHasFallen)
+            return;
+
+        MoveInProgress = true;
     }
 
     public void OnValidMoveCompleted()
     {
+        // Limpiar selección
+        if (SelectedBlock != null)
+        {
+            SelectedBlock.CancelSelection();
+        }
+
+        SelectedBlock = null;
+        MoveInProgress = false;
+
         AdvanceTurn();
+    }
+
+    public void OnInvalidMove()
+    {
+        // Un movimiento inválido NO cambia el turno.
+        onInvalidMove?.Invoke();
     }
 
     public void OnTowerFell()
     {
-        if (_gameOver) return;
+        if (_gameOver)
+            return;
+        Debug.Log($"TORRE CAYÓ (falso positivo si acabas de sacar un bloque) - jugador {CurrentPlayer + 1}");
         TowerHasFallen = true;
         _gameOver = true;
+        MoveInProgress = false;
+
+        if (SelectedBlock != null)
+        {
+            SelectedBlock.CancelSelection();
+        }
+
+        SelectedBlock = null;
+
+        // CurrentPlayer es quien estaba realizando el movimiento.
         onPlayerLost?.Invoke(CurrentPlayer);
     }
-
     void AdvanceTurn()
     {
-        // Después del último jugador, el turno regresa al Jugador 1
         CurrentPlayer = (CurrentPlayer + 1) % playerCount;
+        Debug.Log($"Turno -> Jugador {CurrentPlayer + 1}");
         onTurnChanged?.Invoke(CurrentPlayer);
     }
 }

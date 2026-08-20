@@ -36,13 +36,11 @@ public class ARTowerPlacer : MonoBehaviour
             return;
         }
 
-        // No hay toque.
         if (Input.touchCount == 0)
             return;
 
         Touch touch = Input.GetTouch(0);
 
-        // Solo queremos el momento inicial del toque.
         if (touch.phase != TouchPhase.Began)
             return;
 
